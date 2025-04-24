@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZSEiS-slownik</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}">
+    </head>
+    <body>
+        <header class="container bg-primary p-2 border border-5 border-dark text-center">
+            <p class="h1 font-monospace fw-bold">ZSEiS SŁOWNIK</p>
+        </header>
+        <br>
+        <nav class="container bg-primary p-2 border border-5 border-dark">
+            <div class="btn-group-lg text-center">
+                <a href="/" class="btn btn-primary font-monospace fw-bold border border-2 border-dark float-lg-start">Strona Główna</a>
+                <a href="/1" class="btn btn-primary font-monospace fw-bold border border-2 border-dark">mich a los</a>
+                <a href="/2" class="btn btn-primary font-monospace fw-bold border border-2 border-dark">chrust11</a>
+                <a href="/3" class="btn btn-primary font-monospace fw-bold border border-2 border-dark">dogs leg</a>
+                <a href="/4" class="btn btn-primary font-monospace fw-bold border border-2 border-dark">zbiax</a>
+                <a href="/5" class="btn btn-primary font-monospace fw-bold border border-2 border-dark">AA</a>
+                <a href="https://github.com/PFilip08/zseis-slownik" target="_blank" class="btn btn-primary font-monospace fw-bold border border-2 border-dark float-lg-end">Github</a>
+            </div>
+        </nav>
+        <br/>
+        <img src="{{ url_for('static', filename='assets/construction.gif') }}" alt="construction" class="d-block m-auto"/>
+        <br>
+        <main class="container bg-primary p-3 border border-5 border-dark text-center position-relative">
+            <p class="h3 font-monospace fw-bold">Witaj przybyszu w słowniku ZSEiS!</p>
+            <br>
+            <p class="h4 font-monospace fw-bold">Jest to super ZSEiSowy słownik</p>
+            <a href="http://zseis.zgora.pl" target="_blank" class="btn btn-primary btn-lg font-monospace fw-bold border border-2 border-dark" style="background-color: #2b77bd;">zseis tu</a>
+            <br/>
+            <br/>
+            <p class="h4 font-monospace fw-bold">Wszystko, co tu znajdziesz jest w 99% prawdziwe!!</p>
+            <img src="{{ url_for('static', filename='assets/powered.gif') }}" alt="Powered by ZSEiS" class="img-fluid d-block">
+        </main>
+        <br>
+        <footer class="container bg-primary p-2 border border-5 border-dark text-center">
+            <p class="font-monospace fw-bold">We are totally not connected with zseis, ckziu and elektronik!!11!!!1</p>
+            <p class="font-monospace fst-italic">Frankom & PFilip © 2025</p>
+        </footer>
+    </body>
+</html>
