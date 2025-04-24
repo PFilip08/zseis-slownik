@@ -1,12 +1,13 @@
 from flask import Flask, render_template
 import mysql.connector
+import env as env
 
 def getDB(who):
     conn = mysql.connector.connect(
-    host = "localhost",
-    user = "root",
-    password = "123",
-    database = "zseis"
+    host = env.host,
+    user = env.user,
+    password = env.password,
+    database = env.database
     )
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM "+who)
